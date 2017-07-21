@@ -1,0 +1,145 @@
+/* Set box sizing on all elements. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
+  color: #606356;
+  font-size: 1em;
+}
+
+header {
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 4em 0;
+  background-image: url('olu-eletu-27966.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Double font size for header. */
+  font-size: 2em;
+}
+
+
+/* Header text */
+.introText {
+  font-family: "PT Serif", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.introHeading {
+  margin-top: -0.25em;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+  letter-spacing: .02em;
+}
+
+
+/* Links */
+a {
+  color: #6D8087;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* All h1s should have double font size. */
+h1 {
+  font-size: 2em;
+}
+
+
+/* Every section should have same width, except header and footer. Centered using margin: 0 auto, with 1em padding on top and bottom to better seperate sections. */
+section {
+  max-width: 36em;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+/* Paragraphs in sections should have line-height one and a half times the base font-size. */
+section p {
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+
+/* The first h2 directly preceding an h1 gets appropriate spacing. */
+h1 + h2 {
+  margin-top: 1em;
+}
+
+section.questions h2 {
+  color: #45473D;
+}
+
+/* All paragraphs within questions section directly adjacent to an h2 get a 1em indentation. */
+section.questions h2 ~ p {
+  text-indent: 1em;
+}
+
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #132533;
+  padding: 2.5em 0;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  font-size: .9em;
+}
+
+footer ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Any list-item that is a child of unordered list with class of 'social' is rendered as an inline-block element. This keeps them in a straight line, as opposed to stacked. */
+.social > li {
+  display: inline-block;
+}
+
+footer ul li a {
+  padding: .5em;
+  display: block;
+  transform: translate(0px, 0px);
+  transition: color 0.15s ease-out,
+              transform 0.15s ease-out;
+}
+
+footer ul li a:hover {
+  color: white;
+  transform: translate(0px, -5px);
+  transition: color 0.15s ease-in,
+              transform 0.15s ease-in;
+}
+
+@media only screen and (max-width: 500px){
+  section {
+    max-width: 100%;
+    padding: 1em 2.25em;
+  }
+
+  header {
+  padding: 1em;
+  font-size: 2em;
+  line-height: 3em;
+  }
+}

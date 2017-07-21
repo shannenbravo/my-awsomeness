@@ -1,0 +1,66 @@
+.nav-pills
+{
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5em;
+  margin-bottom: 10%;
+
+}
+
+.pageOne
+{
+  background: url("computer.jpg") no-repeat center center;
+  background-size: cover;
+  height: 900px;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+body
+{
+  background-color: white;
+  font-family: 'Amatic SC', cursive;
+
+}
+.btn-default
+{
+  font-size: 2.0em;
+  color: #337ab7;
+
+}
+h1
+{
+  padding: 0;
+  margin-top: 0px;
+  font-size: 5.5em;
+  color: white;
+  font-weight: bold;
+}
+
+h2
+{
+  padding: 0;
+  margin-top: 0px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+h3
+{
+  padding: 0;
+  margin-top: 0px;
+  font-size: 2.0em;
+  color: white;
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+}
+.block
+{
+  background-color: #337ab7;
+  opacity: .2;
+  padding: 25px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+}
